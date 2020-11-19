@@ -1,0 +1,52 @@
+1-
+#include<stdio.h>
+
+	int main()
+	{
+	  // int valores [] = {0,1,2,3,4,5,6,7,8,9};
+	  int valores [10]
+
+	  for (int i = 0; 1 < 10; i++)
+	  {
+		scanf("%d" , &valores[i]);
+	  }
+
+	  for (int i = 0; 1 < 10; i++)
+		printf("%d" , valores);
+
+
+	  return 0;
+	}
+
+2-
+
+3-
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	char tex [80], pal [80]
+	int i,j,iguais;
+	int tamP, tamT;
+
+	printf("Digite o texto : ");
+	fgets(tex, 80, stdin);
+	printf("Digite a palavra : ");
+	fgets(pal, 80, stdin);
+
+	tamP= strlen(pal) -1;
+	tamT= strlen(tex) -1; // 0 -1 é pelo \n
+
+	for(i=0: i<= tamT - tamP: i++){
+	//para cada i verificar se palavra ocorre a partir de i
+	j = 0;
+	iguais = 1
+	while(j < tamP && iguais){
+	if(pal[j] 1 = tex [i+j])
+	  iguais = 0;
+	j++;
+      }
+	if(iguais)
+	  printf("%d\n" , i);
+  }
+}
